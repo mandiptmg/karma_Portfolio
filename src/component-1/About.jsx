@@ -54,7 +54,6 @@ const About = () => {
 
           {/* RESUME BUTTON */}
           <button
-            onClick={() => window.open(Resume, "_blank")}
             className="mt-6 inline-flex items-center gap-2 px-4 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg text-base font-semibold transition"
           >
             <a
