@@ -12,10 +12,8 @@ const Footer = () => {
               href='#home'
               className='flex items-center mb-4 sm:mb-0'
             >
-              <img src={img} className='h-8 mr-3' alt='mandip Logo' />
-              <span className='self-center text-gray-500 text-2xl font-semibold whitespace-nowrap dark:text-white'>
-                Mandip{' '}
-              </span>
+              <img src={img} className='h-12 mr-3' alt='mandip Logo' />
+            
             </a>
             <ul
               data-aos='fade-up'
@@ -43,7 +41,7 @@ const Footer = () => {
         <p className='block text-sm mx-5 md:mx-0 text-gray-500 sm:text-center dark:text-gray-400'>
           © {time}
           <a href='#home' className='hover:underline ml-1'>
-            Mandip
+            Karma
           </a>
           . All Rights Reserved.
         </p>

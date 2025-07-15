@@ -1,70 +1,83 @@
-import img from '../assets/3d-casual-life-smiling-man-wearing-headset-with-microphone.png'
+import img from "../assets/content.png";
+import Resume from "../assets/resume.pdf";
+
 const About = () => {
   return (
-    <div>
-      <section className='w-full grid place-items-center text-gray-600'>
-        <div className=' pb-10 pt-28 grid lg:grid-cols-2  place-items-center'>
-          <div className=' w-full mb-10 md:mb-0'>
-            <img
-              data-aos='fade-right'
-              className='object-cover object-center rounded'
-              alt='hero'
-              src={img}
-            />
-          </div>
-
-          <div data-aos='fade-left '>
-            <h1 className='text-md text-indigo-600 uppercase text-left tracking-widest font-bold '>
-              about me
-            </h1>
-            <h1 className='title-font sm:text-3xl text-2xl dark:text-white mb-4 font-medium text-gray-900'>
-              A dedicated Front-End React Developer based in Hetauda, Nepal
-            </h1>
-            <p className='text-gray-400 md:text-lg leading-relaxed'>
-              As a junior front-end developer, I specialize in crafting dynamic
-              and visually appealing websites. Proficient in{' '}
-              <span className='text-indigo-600'>HTML</span>,{' '}
-              <span className='text-indigo-600'>CSS</span>, and{' '}
-              <span className='text-indigo-600'>JavaScript</span>, I create
-              seamless user interfaces. My toolkit includes modern libraries
-              like <span className='text-indigo-600'>React</span> and styling
-              with <span className='text-indigo-600'>Tailwind CSS</span>,
-              augmented by the power of{' '}
-              <span className='text-indigo-600'>Next.js</span> and the type
-              safety of <span className='text-indigo-600'>TypeScript</span>.
-              With a strong commitment to user experience, I merge creativity
-              and technical expertise to bring web projects to life. Check out
-              my projects on <span className='text-indigo-600'>GitHub</span> to
-              see my work.
-            </p>
-
-            <button
-              onClick={() =>
-                window.open(
-                  'https://drive.google.com/file/d/1dw-XIinbBwSHvBkUXudVddQ2O72FZrWW/view'
-                )
-              }
-              className='rounded px-3 py-2 flex gap-2 items-center mt-4 text-white hover:bg-indigo-500 bg-indigo-600 text-base capitalize font-semibold md:text-lg'
-            >
-              <svg
-                className=''
-                xmlns='http://www.w3.org/2000/svg'
-                height='16'
-                width='20'
-                viewBox='0 0 640 512'
-              >
-                <path
-                  d='M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z'
-                  fill='white'
-                ></path>
-              </svg>
-              <span> Resume</span>
-            </button>
-          </div>
+    <section className="w-full grid place-items-center text-gray-600">
+      <div className="pt-28 pb-16 grid lg:grid-cols-2 gap-10 items-center px-4 md:px-10 max-w-7xl">
+        {/* IMAGE */}
+        <div className="w-full" data-aos="fade-right">
+          <img
+            src={img}
+            alt="Karma Lama"
+            className="rounded-xl object-cover w-full"
+          />
         </div>
-      </section>
-    </div>
-  )
-}
 
-export default About
+        {/* TEXT */}
+        <div data-aos="fade-left">
+          <h2 className="uppercase text-indigo-600 text-sm font-bold tracking-widest mb-2">
+            About Me
+          </h2>
+
+          <h1 className="sm:text-3xl text-2xl font-bold text-gray-900 dark:text-white mb-4">
+            A Dedicated Content Editor Based in Dubai, UAE
+          </h1>
+
+          <p className="text-gray-500 dark:text-gray-300 md:text-lg leading-relaxed space-y-3">
+            <span>
+              I’m <strong>Karma Lama</strong>, a passionate and results-driven
+              Content Editor with hands-on experience in{" "}
+              <strong>graphic design</strong>,{" "}
+              <strong>social media management</strong>,{" "}
+              <strong>photography</strong>, and <strong>video editing</strong>.
+            </span>
+            <br />
+            <span>
+              With a strong command of tools like <strong>Adobe Suite</strong>,{" "}
+              <strong>Microsoft Office</strong>, and AI-enhanced editing
+              platforms, I bring both technical expertise and a creative eye to
+              every project.
+            </span>
+            <br />
+            <span>
+              I thrive on crafting compelling digital content that aligns with
+              brand goals and resonates with audiences. I&apos;m a fast learner,
+              adaptable, and always eager to innovate.
+            </span>
+            <br />
+            <span>
+              I&apos;m excited about contributing to a creative team and
+              continuing to grow in a dynamic, collaborative environment.
+            </span>
+          </p>
+
+          {/* RESUME BUTTON */}
+          <button
+            onClick={() => window.open(Resume, "_blank")}
+            className="mt-6 inline-flex items-center gap-2 px-4 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg text-base font-semibold transition"
+          >
+            <a
+              href={Resume}
+              download="Karma-Lama-Resume.pdf"
+              className="inline-flex items-center gap-2 px-4 py-2 text-white bg-indigo-600 hover:bg-indigo-700 rounded-lg text-base font-semibold transition"
+            ></a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="18"
+              width="20"
+              viewBox="0 0 640 512"
+              className="fill-current"
+            >
+              <path d="M144 480C64.5 480 0 415.5 0 336c0-62.8 40.2-116.2 96.2-135.9c-.1-2.7-.2-5.4-.2-8.1c0-88.4 71.6-160 160-160c59.3 0 111 32.2 138.7 80.2C409.9 102 428.3 96 448 96c53 0 96 43 96 96c0 12.2-2.3 23.8-6.4 34.6C596 238.4 640 290.1 640 352c0 70.7-57.3 128-128 128H144zm79-167l80 80c9.4 9.4 24.6 9.4 33.9 0l80-80c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-39 39V184c0-13.3-10.7-24-24-24s-24 10.7-24 24V318.1l-39-39c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9z" />
+            </svg>
+            <span>View Resume</span>
+            <a />
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About;

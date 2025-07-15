@@ -37,7 +37,7 @@ const Navbar = () => {
   const navlink = [
     { title: 'home', href: '#home' },
     { title: 'about me', href: '#about me' },
-    { title: 'projects', href: '#projects' },
+    { title: 'Portfolio', href: '#projects' },
     { title: 'contact', href: '#contact' },
   ]
   return (
@@ -49,17 +49,9 @@ const Navbar = () => {
               <img
                 src={image}
                 alt='logo'
-                className='w-9 duration-1000 animate__slower animate__fadeInLeft animate__animated h-9 rounded-full'
+                className=' object-contain duration-1000 animate__slower animate__fadeInLeft animate__animated h-9 rounded-full'
               />
-              <h1
-                className='text-gray-600 
-             duration-500  animate__slow animate__delay-1s	 animate__fadeInLeft animate__animated text-lg dark:text-white'
-              >
-                Mandip&nbsp;
-                <span className='capitalize text-indigo-600 font-semibold'>
-                  | developer
-                </span>
-              </h1>{' '}
+            
             </a>
           </div>
           <div className='hidden animate__slower 	 animate__fadeInDown animate__animated md:block'>
