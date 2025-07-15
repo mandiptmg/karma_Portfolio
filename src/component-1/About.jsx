@@ -1,5 +1,5 @@
 import img from "../assets/content.png";
-import Resume from "../assets/resume.pdf";
+import Resume from "../assets/Resume.pdf";
 
 const About = () => {
   return (
