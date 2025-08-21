@@ -69,23 +69,15 @@ const Projects = () => {
             >
               <div className='relative overflow-hidden group'>
                 {mediaType === 'video' ? (
-                  // <video
-                  //   src={media}
-                  //   muted
-                  //   loop
-                  //   autoPlay
-                  //   playsInline
-                  //   className='w-full h-64 hover:scale-125 transition-all duration-700   object-cover rounded-t-lg'
-                  // />
-                <!-- Mux Player -->
-    <mux-player
-      class="video-player"
-      autoplay
-      playback-id={media}
-      metadata-video-title={title}
-      metadata-viewer-user-id="user-123"
-      accent-color="#5C9FFF"
-    ></mux-player>
+                  <video
+                    src={media}
+                    muted
+                    loop
+                    autoPlay
+                    playsInline
+                    className='w-full h-64 hover:scale-125 transition-all duration-700   object-cover rounded-t-lg'
+                  />
+          
                 ) : (
                   <img
                     src={media}
