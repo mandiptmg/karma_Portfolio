@@ -8,6 +8,7 @@ import nightDog from '../../assets/project/night view with dog.jpg'
 import nightMode from '../../assets/project/nightMode.jpg'
 import trekking from '../../assets/project/treking.jpg'
 
+// video 
 import coffee from '../../assets/video/coffee.mp4'
 import peace from '../../assets/video/peace.mp4'
 import trekVideo from '../../assets/video/trek.mp4'
