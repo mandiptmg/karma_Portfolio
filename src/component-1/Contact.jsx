@@ -1,10 +1,13 @@
 import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
-
+import contact from "../assets/contact.png";
 const Contact = () => {
   return (
-    <section className="relative text-gray-600 dark:text-gray-300 body-font py-28">
-      <div className="max-w-5xl px-5 mx-auto">
+    <section className="relative text-gray-600 grid lg:grid-cols-2 place-items-center gap-6 dark:text-gray-300 body-font py-28">
+      <div className="w-full h-full overflow-hidden ">
+        <img src={contact} className="w-full rounded-xl  object-cover" />
+      </div>
+      <div className=" mx-auto">
         {/* Header */}
         <div className="flex flex-col w-full mb-12 text-center">
           <h1
@@ -26,10 +29,10 @@ const Contact = () => {
         {/* Contact Options */}
         <div
           data-aos="fade-up"
-          className="flex flex-wrap items-center justify-center w-full max-w-2xl gap-6 mx-auto"
+          className="grid  grid-row-4  items-center justify-center w-full  gap-6 mx-auto"
         >
           {/* Email */}
-          <div className="flex items-center gap-4 p-5 transition bg-white rounded-lg shadow-md dark:bg-slate-800 hover:shadow-lg">
+          <div className="col-span-1  xl:col-span-2 flex items-center justify-center gap-4 p-5 transition bg-white rounded-lg shadow-md dark:bg-slate-800 hover:shadow-lg">
             <MdOutlineMail className="text-3xl text-red-500" />
             <div>
               <button

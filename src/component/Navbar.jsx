@@ -1,4 +1,6 @@
 import image from "../assets/logo.png";
+import whiteLogo from "../assets/white-logo.png";
+
 // import { NavLink } from 'react-router-dom'
 import "animate.css";
 import { useEffect, useState } from "react";
@@ -8,8 +10,7 @@ import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
 import { useGlobalContext } from "../context/context";
 
 const Navbar = () => {
-  const { active, setActive } = useGlobalContext();
-  const [toogle, setToogle] = useState(false);
+  const { active, setActive, toogle, setToogle } = useGlobalContext();
   const [scroll, setScroll] = useState("");
 
   //load dark mode local storage
@@ -23,9 +24,11 @@ const Navbar = () => {
     }
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setScroll("bg-gray-100 text-gray-600 dark:bg-slate-800 shadow-xl");
+        setScroll(
+          "bg-gray-100 text-gray-600 dark:text-white dark:bg-slate-800 shadow-xl"
+        );
       } else {
-        setScroll(" text-white");
+        setScroll("text-white");
       }
     };
     handleScroll();
@@ -46,11 +49,25 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-x-2">
             <a href="/" className="flex items-center gap-1">
-              <img
-                src={image}
-                alt="logo"
-                className="object-contain h-16 duration-1000 rounded-full animate__slower animate__fadeInLeft animate__animated"
-              />
+              {toogle ? (
+                <img
+                  src={whiteLogo}
+                  className="object-contain h-16 duration-1000 rounded-full animate__slower animate__fadeInLeft animate__animated"
+                  alt="karma Logo"
+                />
+              ) : window.scrollY > 50 ? (
+                <img
+                  src={image}
+                  className="object-contain h-16 duration-1000 rounded-full animate__slower animate__fadeInLeft animate__animated"
+                  alt="karma Logo"
+                />
+              ) : (
+                <img
+                  src={whiteLogo}
+                  className="object-contain h-16 duration-1000 rounded-full animate__slower animate__fadeInLeft animate__animated"
+                  alt="karma Logo"
+                />
+              )}
             </a>
           </div>
           <div className="hidden animate__slower animate__fadeInDown animate__animated md:block">
@@ -81,9 +98,9 @@ const Navbar = () => {
               className="mr-5 md:mr-0 animate__slower animate__fadeInRight animate__animated"
             >
               {toogle ? (
-                <BsFillSunFill className="text-yellow-600" />
+                <BsFillSunFill className="text-yellow-600  bg-white p-2 h-7 w-7 rounded-full" />
               ) : (
-                <BsFillMoonStarsFill className="text-slate-800" />
+                <BsFillMoonStarsFill className="text-slate-800 bg-white p-2 h-7 w-7 rounded-full" />
               )}
             </button>
 

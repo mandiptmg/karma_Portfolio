@@ -11,7 +11,7 @@ const Hero = () => {
         href="https://wa.me/971501234567" // Replace with your number
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed z-50 p-4 text-white transition-all duration-300 bg-green-500 rounded-full shadow-lg bottom-5 right-5 animate-bounce hover:animate-none hover:bg-green-600"
+        className="fixed z-50 p-4 text-white transition-all duration-300 bg-green-500 rounded-full shadow-lg bottom-16 right-5 animate-bounce hover:animate-none hover:bg-green-600"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -24,27 +24,26 @@ const Hero = () => {
         </svg>
       </a>
 
-      <div className="absolute top-0 left-0 w-full h-[80vh] overflow-hidden ">
-  {/* Video */}
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    poster="/path/to/poster.jpg" // optional static image
-    className="absolute inset-0 object-cover object-top w-full"
-    loading="lazy"
-    aria-label="Background video"
-  >
-    <source src={bgVideo} type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+      <div className="absolute top-0 left-0 w-full min-h-[80vh] overflow-hidden ">
+        {/* Video */}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="/path/to/poster.jpg" // optional static image
+          className="absolute inset-0 object-cover object-top h-full w-full"
+          loading="lazy"
+          aria-label="Background video"
+        >
+          <source src={bgVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
-  {/* Black overlay with 60% opacity */}
-  <div className="absolute inset-0 bg-black/30 mix-blend-multiply "></div>
-  <div className="absolute bottom-0 left-0 w-full h-[80vh] bg-gradient-to-b from-transparent via-transparent to-gray-50 dark:to-slate-900"></div>
-
-</div>
+        {/* Black overlay with 60% opacity */}
+        <div className="absolute inset-0 bg-black/30 min-h-[80vh] w-full mix-blend-multiply "></div>
+        <div className="absolute bottom-0 left-0 w-full min-h-[80vh] bg-gradient-to-b from-transparent via-transparent to-gray-50 dark:to-slate-900"></div>
+      </div>
 
       <div id="home">
         <Hero1 />

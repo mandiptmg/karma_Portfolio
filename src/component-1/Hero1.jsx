@@ -8,10 +8,10 @@ const Hero1 = () => {
   };
 
   return (
-    <div>
+    <div >
       <section
         id="home"
-        className="relative w-full mx-auto text-gray-200 h-[80vh] pt-28 body-font "
+        className="relative w-full mx-auto text-gray-600 lg:text-gray-200 min-h-[80vh] pt-28 body-font "
       >
         <div className="flex flex-col-reverse items-center px-5 lg:grid lg:grid-cols-2 md:gap-7 gap-y-20">
           {/* LEFT TEXT CONTENT */}
@@ -22,7 +22,7 @@ const Hero1 = () => {
             className="text-center space-y-7 md:text-left"
           >
             <div className="flex items-start gap-x-2">
-              <h1 className="grid text-4xl font-bold capitalize lg:text-5xl text-primary place-items-center">
+              <h1 className="grid w-full text-4xl font-bold capitalize lg:text-5xl text-primary place-items-center lg:place-items-start">
                 <TypeAnimation
                   sequence={[
                     "Content Editor 📸",
@@ -77,7 +77,7 @@ const Hero1 = () => {
           {/* RIGHT PROFILE IMAGE */}
           <div className="grid w-full place-items-center">
             <div
-              data-aos="fade-left"
+              data-aos="fade-down"
               data-aos-delay="600"
               className="animate-blob relative bg-cover bg-center bg-no-repeat border-4 border-transparent rounded-full lg:w-[25rem] lg:h-[25rem] md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] transition-all duration-1000 shadow-lg shadow-primary/10"
               style={dynamicStyle}

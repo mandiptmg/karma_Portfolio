@@ -1,7 +1,12 @@
 import { FaChevronCircleUp } from "react-icons/fa";
 import img from "../assets/logo.png";
+import whiteLogo from "../assets/white-logo.png";
+import { useGlobalContext } from "../context/context";
+
 const Footer = () => {
   const time = new Date().getFullYear();
+  const { toogle } = useGlobalContext();
+
   return (
     <div>
       <footer className="relative md:w-[80vw] mx-auto md-[90vw]  mt-16 md:mt-0 ">
@@ -12,7 +17,11 @@ const Footer = () => {
               href="#home"
               className="flex items-center mb-4 sm:mb-0"
             >
-              <img src={img} className="h-20 mr-3" alt="mandip Logo" />
+              {toogle ? (
+                <img src={whiteLogo} className="h-20 mr-3" alt="karma Logo" />
+              ) : (
+                <img src={img} className="h-20 mr-3" alt="karma Logo" />
+              )}
             </a>
             <ul
               data-aos="fade-up"
