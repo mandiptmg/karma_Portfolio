@@ -3,7 +3,6 @@ import { FaRegPlayCircle } from "react-icons/fa";
 import img from "../assets/person.png";
 import { TypeAnimation } from "react-type-animation";
 import { useState } from "react";
-import "@mux/mux-player";
 
 const Hero1 = () => {
   const [showModal, setShowModal] = useState(false);

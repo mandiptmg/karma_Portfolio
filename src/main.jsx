@@ -5,6 +5,8 @@ import './index.css'
 import './component.css'
 import { BrowserRouter } from 'react-router-dom'
 import { AppProvider } from './context/context.jsx'
+import "@mux/mux-player";
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AppProvider>
