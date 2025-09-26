@@ -16,15 +16,15 @@ const About = () => {
 
         {/* TEXT */}
         <div data-aos="fade-up">
-          <h2 className="mb-2 text-sm font-bold tracking-widest uppercase text-primary">
+          <h2 className="mb-2 text-xs sm:text-sm font-bold tracking-widest uppercase text-primary">
             About Me
           </h2>
 
-          <h1 className="mb-4 text-2xl font-bold text-gray-900 sm:text-3xl dark:text-white">
+          <h1 className="mb-4 text-xl font-bold text-gray-900 sm:text-3xl dark:text-white">
             A Dedicated Content Editor Based in Dubai, UAE
           </h1>
 
-          <p className="space-y-3 leading-relaxed text-gray-500 dark:text-gray-300 md:text-lg">
+          <p className="space-y-3 leading-relaxed text-gray-500 dark:text-gray-300 text-sm sm:text-base md:text-lg">
             <span>
               I’m <strong>Karma Lama</strong>, a passionate and results-driven
               Content Editor with hands-on experience in{" "}
@@ -57,7 +57,7 @@ const About = () => {
             <a
               href={Resume}
               download="Karma-Lama-Resume.pdf"
-              className="inline-flex items-center gap-2 px-4 py-2 text-base font-semibold text-white transition rounded-lg bg-primary hover:bg-primary/80"
+              className="inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-base font-semibold text-white transition rounded-lg bg-primary hover:bg-primary/80"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

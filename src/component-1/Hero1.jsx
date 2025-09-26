@@ -1,14 +1,18 @@
 import { FaInstagram } from "react-icons/fa6";
+import { FaRegPlayCircle } from "react-icons/fa";
 import img from "../assets/person.png";
 import { TypeAnimation } from "react-type-animation";
+import { useState } from "react";
+import "@mux/mux-player";
 
 const Hero1 = () => {
+  const [showModal, setShowModal] = useState(false);
   const dynamicStyle = {
     backgroundImage: `url(${img})`,
   };
 
   return (
-    <div >
+    <div>
       <section
         id="home"
         className="relative w-full mx-auto text-gray-600 lg:text-gray-200 min-h-[80vh] pt-28 body-font "
@@ -22,7 +26,7 @@ const Hero1 = () => {
             className="text-center space-y-7 md:text-left"
           >
             <div className="flex items-start gap-x-2">
-              <h1 className="grid w-full text-4xl font-bold capitalize lg:text-5xl text-primary place-items-center lg:place-items-start">
+              <h1 className="grid w-full text-2xl sm:text-3xl md:text-4xl font-bold capitalize lg:text-5xl text-primary place-items-center lg:place-items-start">
                 <TypeAnimation
                   sequence={[
                     "Content Editor 📸",
@@ -39,7 +43,7 @@ const Hero1 = () => {
               </h1>
             </div>
 
-            <p className="mb-8 leading-relaxed dark:text-gray-300 md:text-lg">
+            <p className="mb-8 leading-relaxed dark:text-gray-300 text-sm sm:text-base md:text-lg">
               Hello! I&apos;m <strong>Karma Lama</strong>, a passionate visual
               creator blending{" "}
               <span className="font-semibold text-primary">
@@ -59,17 +63,26 @@ const Hero1 = () => {
               effective media solutions that inspire audiences.
             </p>
 
-            <div className="inline-flex items-center justify-center p-2 bg-pink-600 rounded-md lg:justify-start hover:bg-pink-700 gap-x-4">
+            <div className="flex gap-2 items-center ">
               <button
                 onClick={() => {
                   window.open(
                     "https://www.instagram.com/karmamonlamsangpo/profilecard/?igsh=MWs3b2psMHZianFxZw=="
                   );
                 }}
-                className="flex items-center gap-2 text-lg font-medium text-white transition hover:text-white"
+                className="inline-flex items-center gap-2  p-2 bg-pink-600 rounded-md lg:justify-start hover:bg-pink-700 text-sm md:text-lg font-medium text-white transition hover:text-white"
               >
                 <FaInstagram size={25} />
-                Follow on Instagram
+                Instagram
+              </button>
+              <button
+                onClick={() => {
+                  setShowModal(true);
+                }}
+                className="inline-flex items-center gap-2 capitalize p-2 bg-pink-600 rounded-md lg:justify-start hover:bg-pink-700 text-sm md:text-lg font-medium text-white transition hover:text-white"
+              >
+                <FaRegPlayCircle size={25} />
+                play video
               </button>
             </div>
           </div>
@@ -85,6 +98,28 @@ const Hero1 = () => {
           </div>
         </div>
       </section>
+
+      {showModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
+          onClick={() => setShowModal(false)}
+        >
+          <div
+            className="relative shadow-lg w-full max-w-3xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Mux Player */}
+            <mux-player
+              class="w-full rounded-b-2xl"
+              autoplay
+              playback-id="A6oZoUWVZjOIVZB6XnBMLagYnXE6xhDhp8Hcyky018hk"
+              metadata-video-title="Demo Video"
+              metadata-viewer-user-id="user-123"
+              accent-color="#5C9FFF"
+            ></mux-player>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
