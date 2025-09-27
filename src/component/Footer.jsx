@@ -54,10 +54,17 @@ const Footer = () => {
           . All Rights Reserved.
         </p>
 
-        <button title="Home" className="text-3xl ">
-          <a href="#home">
-            <FaChevronCircleUp className="absolute transition-all duration-700 bottom-10 right-14 primary text-primary hover:scale-105 animate-bounce " />
-          </a>
+        <button
+          title="Home"
+          className="text-3xl"
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
+          }}
+        >
+          <FaChevronCircleUp className="absolute transition-all duration-700 bottom-10 right-14 primary text-primary hover:scale-105 animate-bounce " />
         </button>
       </footer>
     </div>

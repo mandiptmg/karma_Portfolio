@@ -24,6 +24,7 @@ const Hero = () => {
         </svg>
       </a>
 
+      {/* video show  */}
       <div className="absolute top-0 left-0 w-full min-h-[80vh] overflow-hidden ">
         {/* Video */}
         <video
