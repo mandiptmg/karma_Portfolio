@@ -22,10 +22,13 @@ const Testimonials = () => {
     <div className="relative w-full mx-auto  md:px-7 pt-24">
       {/* Header / Title */}
       <div className="text-center mb-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+        <h2
+          data-aos="fade-up"
+          className=" text-2xl font-bold text-gray-900 uppercase sm:text-4xl title-font dark:text-white"
+        >
           What Our Clients Say
         </h2>
-        <p className="text-gray-500 mt-2 text-sm md:text-base">
+        <p className="mx-auto mt-4 text-sm sm:text-base leading-relaxed text-gray-500  dark:text-white">
           Real feedback from our amazing clients
         </p>
       </div>
@@ -54,7 +57,7 @@ const Testimonials = () => {
           {testimonials.map((t, index) => (
             <SwiperSlide key={index}>
               <div className="flex justify-center items-center py-6 px-3  w-full">
-                <div className="w-full p-6 bg-white shadow-lg rounded-2xl">
+                <div className="w-full p-6 bg-white  dark:bg-gray-300 shadow-lg rounded-2xl">
                   {/* Video Button */}
                   {t.video && (
                     <button
