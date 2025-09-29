@@ -3,6 +3,7 @@ import About from "../component-1/About";
 import Contact from "../component-1/Contact";
 import Projects from "../component-1/Projects";
 import bgVideo from "../assets/video/trek.mp4";
+import Testimonial from "../component-1/Testimonial";
 
 const Hero = () => {
   return (
@@ -54,6 +55,9 @@ const Hero = () => {
       </div>
       <div id="projects">
         <Projects />
+      </div>
+       <div>
+        <Testimonial />
       </div>
       <div id="contact">
         <Contact />

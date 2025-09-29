@@ -18,7 +18,7 @@ const Contact = () => {
           </h1>
           <p
             data-aos="fade-up"
-            className="mx-auto text-sm sm:text-base leading-relaxed lg:w-2/3"
+            className="mx-auto text-sm sm:text-base leading-relaxed lg:w-2/3 text-gray-500  dark:text-white "
           >
             Whether you&apos;re looking to collaborate on a creative project,
             need help with content editing or visual storytelling, or simply
