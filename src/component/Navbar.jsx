@@ -82,7 +82,7 @@ const Navbar = () => {
               })}{" "}
             </ul>
           </div>
-          <div>
+          <div className="flex items-center">
             <button
               onClick={() => {
                 setToogle(!toogle);
@@ -119,17 +119,17 @@ const Navbar = () => {
       <div
         className={
           active
-            ? " fixed dark:bg-slate-900 bg-white top-0 left-0 z-10 w-full h-full"
+            ? " fixed grid place-items-center dark:bg-slate-900 bg-white top-0 left-0 z-10 w-full h-full"
             : "hidden"
         }
       >
-        <div className="grid mt-40 place-items-center">
+        <div className="grid place-items-center">
           <div>
             <button
-              className="absolute top-7 right-5 "
+              className="absolute top-7 right-5 bg-primary rounded-full p-2  transition-all duration-300 hover:scale-105  "
               onClick={() => setActive(false)}
             >
-              <FaTimes className="text-2xl text-red-600 transition-all duration-300 hover:scale-105 hover:text-red-800 " />
+              <FaTimes className="text-2xl text-white " />
             </button>
           </div>
           <div>
@@ -137,7 +137,7 @@ const Navbar = () => {
               {navlink.map((item, index) => {
                 const { title, href } = item;
                 return (
-                  <li key={index} className="hover:text-primary">
+                  <li key={index} className="hover:text-primary uppercase italic font-extrabold">
                     <a href={href} onClick={() => setActive(false)}>
                       {title}
                     </a>

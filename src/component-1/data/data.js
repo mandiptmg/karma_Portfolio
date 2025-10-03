@@ -93,6 +93,24 @@ const data = [
     mediaType: "video",
     description: "A romantic music video capturing love and connection.",
   },
+  {
+    title: "Modern Real Estate Tour",
+    media: "https://www.youtube.com/watch?v=0_1AAQ2d4Vg",
+    mediaType: "real-estate-video",
+    description: "Showcasing a modern apartment with cinematic walkthroughs.",
+  },
+  {
+    title: "Luxury Villa Showcase",
+    media: Couple,
+    mediaType: "real-estate-video",
+    description: "A detailed tour of a luxury villa property.",
+  },
+  {
+    title: "Urban Apartment Highlights",
+    media: peace,
+    mediaType: "real-estate-video",
+    description: "Key features of a contemporary urban apartment.",
+  },
 ];
 
  const testimonials = [
