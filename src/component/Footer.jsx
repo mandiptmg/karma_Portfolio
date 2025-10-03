@@ -2,6 +2,7 @@ import { FaChevronCircleUp } from "react-icons/fa";
 import img from "../assets/logo.png";
 import whiteLogo from "../assets/white-logo.png";
 import { useGlobalContext } from "../context/context";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const time = new Date().getFullYear();
@@ -51,7 +52,12 @@ const Footer = () => {
           <a href="#home" className="ml-1 hover:underline">
             Karma
           </a>
-          . All Rights Reserved.
+          . All Rights Reserved.{" "}
+          <span className="font-light  italic capitalize underline">
+            <Link to={"https://mandiptamang.vercel.app"}>
+              created by Mandip Tamang
+            </Link>
+          </span>
         </p>
 
         <button
