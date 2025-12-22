@@ -16,15 +16,15 @@ import Couple from "../assets/video/couple_music_video.mp4";
 
 
 
-import video1 from "../assets/real-state-video/video1.mp4";
-import video2 from "../assets/real-state-video/video2.mp4";
-import video3 from "../assets/real-state-video/video3.mp4";
-import video4 from "../assets/real-state-video/video4.mp4";
-import video5 from "../assets/real-state-video/video5.mp4";
-import video6 from "../assets/real-state-video/video8.mp4";
-import video7 from "../assets/real-state-video/video7.mp4";
-import video8 from "../assets/real-state-video/video8.mp4";
-import video9 from "../assets/real-state-video/video9.mp4";
+import video1 from "../assets/realstatevideo/video1.MP4";
+import video2 from "../assets/realstatevideo/video2.MP4";
+import video3 from "../assets/realstatevideo/video3.MP4";
+import video4 from "../assets/realstatevideo/video4.MP4";
+import video5 from "../assets/realstatevideo/video5.MP4";
+import video6 from "../assets/realstatevideo/video8.MP4";
+import video7 from "../assets/realstatevideo/video7.MP4";
+import video8 from "../assets/realstatevideo/video8.MP4";
+import video9 from "../assets/realstatevideo/video9.MP4";
 
 // testimonial image
 // testimonial images (Revo Real Estate Agents)
