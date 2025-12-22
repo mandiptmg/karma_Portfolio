@@ -16,7 +16,7 @@ import Couple from "../assets/video/couple_music_video.mp4";
 
 import IMG_3780 from "../assets/real-state-video/IMG_3780.MP4";
 import IMG_3781 from "../assets/real-state-video/IMG_3781.MP4";
-import IMG_3782 from "../assets/real-state-video/IMG_3782.mp4";
+// import IMG_3782 from "../assets/real-state-video/IMG_3782.mp4";
 import IMG_3783 from "../assets/real-state-video/IMG_3783.mp4";
 import IMG_3784 from "../assets/real-state-video/IMG_3784.mp4";
 import IMG_3785 from "../assets/real-state-video/IMG_3785.mp4";
@@ -47,12 +47,12 @@ const data = [
     mediaType: "real-estate-video",
     description: "Spacious living area and layout.",
   },
-  {
-    title: "Real Estate Walkthrough 3",
-    media: IMG_3782,
-    mediaType: "real-estate-video",
-    description: "Luxury apartment interior showcase.",
-  },
+  // {
+  //   title: "Real Estate Walkthrough 3",
+  //   media: IMG_3782,
+  //   mediaType: "real-estate-video",
+  //   description: "Luxury apartment interior showcase.",
+  // },
   {
     title: "Real Estate Walkthrough 4",
     media: IMG_3783,
