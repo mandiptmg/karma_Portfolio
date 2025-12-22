@@ -14,15 +14,17 @@ import peace from "../assets/video/peace.mp4";
 import trekVideo from "../assets/video/trek.mp4";
 import Couple from "../assets/video/couple_music_video.mp4";
 
-import IMG_3780 from "../assets/real-state-video/IMG_3780.MP4";
-import IMG_3781 from "../assets/real-state-video/IMG_3781.MP4";
-// import IMG_3782 from "../assets/real-state-video/IMG_3782.mp4";
-import IMG_3783 from "../assets/real-state-video/IMG_3783.mp4";
-import IMG_3784 from "../assets/real-state-video/IMG_3784.mp4";
-import IMG_3785 from "../assets/real-state-video/IMG_3785.mp4";
-import IMG_3787 from "../assets/real-state-video/IMG_3787.mp4";
-import IMG_3788 from "../assets/real-state-video/IMG_3788.mp4";
-import IMG_3790 from "../assets/real-state-video/IMG_3790.mp4";
+
+
+import video1 from "../assets/real-state-video/video1.MP4";
+import video2 from "../assets/real-state-video/video2.mp4";
+import video3 from "../assets/real-state-video/video3.MP4";
+import video4 from "../assets/real-state-video/video4.mp4";
+import video5 from "../assets/real-state-video/video5.mp4";
+import video6 from "../assets/real-state-video/video8.mp4";
+import video7 from "../assets/real-state-video/video7.mp4";
+import video8 from "../assets/real-state-video/video8.mp4";
+import video9 from "../assets/real-state-video/video9.mp4";
 
 // testimonial image
 // testimonial images (Revo Real Estate Agents)
@@ -37,67 +39,67 @@ const data = [
   // real estate mp4 videos
   {
     title: "Real Estate Walkthrough 1",
-    media: IMG_3780,
+    media: video2,
     mediaType: "real-estate-video",
     description: "Cinematic walkthrough of modern interiors.",
   },
   {
     title: "Real Estate Walkthrough 2",
-    media: IMG_3781,
+    media: video1,
     mediaType: "real-estate-video",
     description: "Spacious living area and layout.",
   },
-  // {
-  //   title: "Real Estate Walkthrough 3",
-  //   media: IMG_3782,
-  //   mediaType: "real-estate-video",
-  //   description: "Luxury apartment interior showcase.",
-  // },
+  {
+    title: "Real Estate Walkthrough 3",
+    media: video6,
+    mediaType: "real-estate-video",
+    description: "Luxury apartment interior showcase.",
+  },
   {
     title: "Real Estate Walkthrough 4",
-    media: IMG_3783,
+    media: video3,
     mediaType: "real-estate-video",
     description: "Premium finishes and lighting.",
   },
   {
     title: "Real Estate Walkthrough 5",
-    media: IMG_3784,
+    media: video4,
     mediaType: "real-estate-video",
     description: "Open-plan design and flow.",
   },
   {
     title: "Real Estate Walkthrough 6",
-    media: IMG_3785,
+    media: video5,
     mediaType: "real-estate-video",
     description: "Kitchen and dining walkthrough.",
   },
   // {
   //   title: "Real Estate Walkthrough 7",
-  //   media: IMG_3786,
+  //   media: video6,
   //   mediaType: "real-estate-video",
   //   description: "Bedroom and comfort spaces.",
   // },
   {
     title: "Real Estate Walkthrough 8",
-    media: IMG_3787,
+    media: video7,
     mediaType: "real-estate-video",
     description: "Balcony and exterior views.",
   },
   {
     title: "Real Estate Walkthrough 9",
-    media: IMG_3788,
+    media: video8,
     mediaType: "real-estate-video",
     description: "Urban apartment overview.",
   },
   // {
   //   title: "Real Estate Walkthrough 10",
-  //   media: IMG_3789,
+  //   media: video9,
   //   mediaType: "real-estate-video",
   //   description: "Architectural details tour.",
   // },
   {
     title: "Real Estate Walkthrough 11",
-    media: IMG_3790,
+    media: video9,
     mediaType: "real-estate-video",
     description: "Complete luxury property walkthrough.",
   },
