@@ -9,7 +9,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 // Helper component for stars
-// eslint-disable-next-line react/prop-types
 const Stars = ({ count }) => (
   <div className="flex mt-1">
     {Array.from({ length: count }).map((_, i) => (
@@ -33,9 +32,18 @@ const Stars = ({ count }) => (
 const Testimonials = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
+  const swiperRef = useRef(null);
 
-  // Attach navigation refs after mount
-  useEffect(() => {}, []);
+  // Update navigation after Swiper initialization
+  useEffect(() => {
+    if (swiperRef.current && swiperRef.current.navigation) {
+      const swiper = swiperRef.current;
+      swiper.params.navigation.prevEl = prevRef.current;
+      swiper.params.navigation.nextEl = nextRef.current;
+      swiper.navigation.init();
+      swiper.navigation.update();
+    }
+  }, []);
 
   return (
     <div className="relative w-full mx-auto md:px-7 pt-24">
@@ -65,9 +73,12 @@ const Testimonials = () => {
             1280: { slidesPerView: 4 },
           }}
           loop
-          navigation={{
-            prevEl: prevRef.current,
-            nextEl: nextRef.current,
+          // navigation={{
+          //   prevEl: prevRef.current,
+          //   nextEl: nextRef.current,
+          // }}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
           }}
           onBeforeInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
@@ -85,7 +96,9 @@ const Testimonials = () => {
                       className="w-14 h-14 rounded-full object-cover"
                     />
                     <div>
-                      <h3 className="text-lg font-semibold text-gray-800">{t.name}</h3>
+                      <h3 className="text-lg font-semibold text-gray-800">
+                        {t.name}
+                      </h3>
                       <p className="text-sm text-gray-500">{t.role}</p>
                       <Stars count={t.stars} />
                     </div>
