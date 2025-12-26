@@ -214,7 +214,7 @@ const testimonials = [
     name: "Sajid Khan",
     role: "Luxury Real Estate Agent @ Revo Real Estate, Dubai",
     image: sajid,
-    stars: 5,
+    stars: 4,
     testimonial:
       "From interior shots to exterior drone views, every video feels polished and professional. Clients are impressed even before site visits.",
   },
