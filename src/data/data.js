@@ -25,6 +25,9 @@ import video6 from "../assets/realstatevideo/video8.MP4";
 import video7 from "../assets/realstatevideo/video7.MP4";
 import video8 from "../assets/realstatevideo/video8.MP4";
 import video9 from "../assets/realstatevideo/video9.MP4";
+import video10 from "../assets/realstatevideo/video10.MP4";
+import video11 from "../assets/realstatevideo/video11.MP4";
+import video12 from "../assets/realstatevideo/video12.MP4";
 
 // testimonial image
 // testimonial images (Revo Real Estate Agents)
@@ -36,152 +39,163 @@ import manjit from "../assets/Agent/manjit.jpeg";
 import tarun from "../assets/Agent/tarun.jpeg";
 
 const data = [
-  // real estate mp4 videos
+  // Real Estate Videos
   {
-    title: "Real Estate Walkthrough 1",
+    title: "Modern Interior Walkthrough",
+    media: video11,
+    mediaType: "real-estate-video",
+    description: "A cinematic walkthrough showcasing modern interiors with clean design and elegant details.",
+  },
+  {
+    title: "Luxury Living Space Tour",
+    media: video10,
+    mediaType: "real-estate-video",
+    description: "An immersive tour highlighting spacious living areas and contemporary layouts.",
+  },
+  {
+    title: "Premium Apartment Showcase",
+    media: video12,
+    mediaType: "real-estate-video",
+    description: "A refined walkthrough emphasizing luxury finishes and architectural balance.",
+  },
+  {
+    title: "Contemporary Home Walkthrough",
     media: video2,
     mediaType: "real-estate-video",
-    description: "Cinematic walkthrough of modern interiors.",
+    description: "A smooth walkthrough presenting modern interiors with natural lighting.",
   },
   {
-    title: "Real Estate Walkthrough 2",
+    title: "Spacious Living Area Tour",
     media: video1,
     mediaType: "real-estate-video",
-    description: "Spacious living area and layout.",
+    description: "A detailed look at open living spaces designed for comfort and functionality.",
   },
   {
-    title: "Real Estate Walkthrough 3",
+    title: "Luxury Apartment Interior",
     media: video6,
     mediaType: "real-estate-video",
-    description: "Luxury apartment interior showcase.",
+    description: "An elegant showcase of premium interiors crafted for modern urban living.",
   },
   {
-    title: "Real Estate Walkthrough 4",
+    title: "Premium Finish & Lighting Tour",
     media: video3,
     mediaType: "real-estate-video",
-    description: "Premium finishes and lighting.",
+    description: "Highlighting high-end finishes, ambient lighting, and refined textures.",
   },
   {
-    title: "Real Estate Walkthrough 5",
+    title: "Open-Plan Design Walkthrough",
     media: video4,
     mediaType: "real-estate-video",
-    description: "Open-plan design and flow.",
+    description: "A fluid walkthrough demonstrating seamless open-plan design and flow.",
   },
   {
-    title: "Real Estate Walkthrough 6",
+    title: "Kitchen & Dining Experience",
     media: video5,
     mediaType: "real-estate-video",
-    description: "Kitchen and dining walkthrough.",
+    description: "A guided tour of stylish kitchen and dining spaces built for everyday living.",
   },
-  // {
-  //   title: "Real Estate Walkthrough 7",
-  //   media: video6,
-  //   mediaType: "real-estate-video",
-  //   description: "Bedroom and comfort spaces.",
-  // },
   {
-    title: "Real Estate Walkthrough 8",
+    title: "Balcony & Exterior Views",
     media: video7,
     mediaType: "real-estate-video",
-    description: "Balcony and exterior views.",
+    description: "A relaxing walkthrough showcasing balconies and stunning exterior views.",
   },
   {
-    title: "Real Estate Walkthrough 9",
+    title: "Urban Apartment Overview",
     media: video8,
     mediaType: "real-estate-video",
-    description: "Urban apartment overview.",
+    description: "A complete overview of an urban apartment with modern lifestyle elements.",
   },
-  // {
-  //   title: "Real Estate Walkthrough 10",
-  //   media: video9,
-  //   mediaType: "real-estate-video",
-  //   description: "Architectural details tour.",
-  // },
   {
-    title: "Real Estate Walkthrough 11",
+    title: "Luxury Property Walkthrough",
     media: video9,
     mediaType: "real-estate-video",
-    description: "Complete luxury property walkthrough.",
+    description: "A comprehensive cinematic tour of a luxury property from entry to exit.",
   },
+
+  // Photography
   {
-    title: "Street Photography",
+    title: "Urban Street Stories",
     media: auto,
     mediaType: "image",
-    description: "Capturing candid life in urban streets.",
+    description: "Candid moments capturing everyday life and emotions in urban streets.",
   },
   {
-    title: "Portraits of Wisdom",
+    title: "Portraits of Experience",
     media: baje,
     mediaType: "image",
-    description: "Emotional depth through close-up portraits of elders.",
+    description: "Intimate portraits reflecting wisdom, character, and lived experiences.",
   },
   {
-    title: "Temple Landscape",
+    title: "Sacred Temple Landscape",
     media: temple,
     mediaType: "image",
-    description: "Ancient temples framed in natural serenity.",
+    description: "Ancient temples framed by nature, expressing timeless serenity.",
   },
   {
     title: "Above the Clouds",
     media: aboveCloud,
     mediaType: "image",
-    description: "Breathtaking mountain views above cloud layers.",
+    description: "Dramatic mountain views rising above layers of clouds.",
   },
   {
-    title: "Innocence with a Pup",
+    title: "Pure Innocence",
     media: babyDog,
     mediaType: "image",
-    description: "A heartwarming moment between a baby and a dog.",
+    description: "A tender moment capturing the bond between a baby and a playful pup.",
   },
   {
-    title: "Children Riding",
+    title: "Joyful Ride",
     media: childrenCycle,
     mediaType: "image",
-    description: "Joyful children on cycles in playful motion.",
+    description: "Children riding bicycles, expressing freedom and pure happiness.",
   },
   {
-    title: "Dog Under the Night Sky",
+    title: "Calm Under City Lights",
     media: nightDog,
     mediaType: "image",
-    description: "A peaceful dog gazing under city night lights.",
+    description: "A peaceful dog gazing beneath the glow of city night lights.",
   },
   {
-    title: "Night Mode Cityscape",
+    title: "City Nights",
     media: nightMode,
     mediaType: "image",
-    description: "City life captured in dramatic night mode.",
+    description: "Urban cityscapes captured in dramatic night mode tones.",
   },
   {
-    title: "Trekking to the Heights",
+    title: "Journey to the Heights",
     media: trekking,
     mediaType: "image",
-    description: "Adventure scenes from the trekking trail.",
+    description: "Adventure-filled moments from a scenic trekking trail.",
   },
+
+  // Cinematic Videos
   {
-    title: "Coffee Moments",
+    title: "Coffee Ritual",
     media: coffee,
     mediaType: "video",
-    description: "A cinematic short featuring coffee preparation.",
+    description: "A cinematic short capturing the art and calm of coffee preparation.",
   },
   {
-    title: "Peaceful Vibes",
+    title: "Moments of Peace",
     media: peace,
     mediaType: "video",
-    description: "Serenity and motion through peaceful visuals.",
+    description: "Visual storytelling focused on calm motion and peaceful energy.",
   },
   {
-    title: "Trekking Nepal",
+    title: "Trekking Through Nepal",
     media: trekVideo,
     mediaType: "video",
-    description: "A trek through Nepal’s stunning terrains.",
+    description: "A cinematic journey through Nepal’s breathtaking trekking routes.",
   },
   {
-    title: "Couple Music Video",
+    title: "Love in Motion",
     media: Couple,
     mediaType: "video",
-    description: "A romantic music video capturing love and connection.",
+    description: "A romantic music video capturing emotion, movement, and connection.",
   },
 ];
+
 
 export default data;
 
