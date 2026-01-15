@@ -25,9 +25,9 @@ import video6 from "../assets/realstatevideo/video8.MP4";
 import video7 from "../assets/realstatevideo/video7.MP4";
 import video8 from "../assets/realstatevideo/video8.MP4";
 import video9 from "../assets/realstatevideo/video9.MP4";
-import video10 from "../assets/realstatevideo/video10.MP4";
-import video11 from "../assets/realstatevideo/video11.MP4";
-import video12 from "../assets/realstatevideo/video12.MP4";
+import video10 from "../assets/realstatevideo/video10.mp4";
+import video11 from "../assets/realstatevideo/video11.mp4";
+import video12 from "../assets/realstatevideo/video12.mp4";
 
 // testimonial image
 // testimonial images (Revo Real Estate Agents)
