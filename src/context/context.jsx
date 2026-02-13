@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 
 const AppContext = createContext();
 
-// eslint-disable-next-line react/prop-types
 export const AppProvider = ({ children }) => {
   const [active, setActive] = useState(false);
   const [toogle, setToogle] = useState(false);

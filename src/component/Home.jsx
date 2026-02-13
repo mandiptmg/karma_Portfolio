@@ -45,7 +45,7 @@ const Home = () => {
 
         {/* Black overlay with 60% opacity */}
         <div className="absolute inset-0 bg-black/30 min-h-[80vh] w-full mix-blend-multiply "></div>
-        <div className="absolute bottom-0 left-0 w-full min-h-[80vh] bg-gradient-to-b from-transparent via-transparent to-gray-50 dark:to-slate-900"></div>
+        <div className="absolute bottom-0 left-0 w-full min-h-[80vh] bg-linear-to-b from-transparent via-transparent to-gray-50 dark:to-slate-900"></div>
       </div>
 
       <div id="home">

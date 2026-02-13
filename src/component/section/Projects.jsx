@@ -46,7 +46,7 @@ const Projects = () => {
               setFilter(type);
               setShowAll(false); // reset when filter changes
             }}
-            className={`px-4 py-1 rounded-full border text-sm font-semibold transition capitalize ${
+            className={`px-4 py-1 cursor-pointer rounded-full border text-sm font-semibold transition capitalize ${
               filter === type
                 ? "bg-black text-white dark:bg-white dark:text-black"
                 : "bg-white text-gray-600 dark:bg-slate-800 dark:text-gray-300 border-gray-300"
@@ -135,7 +135,7 @@ const Projects = () => {
           >
             <button
               onClick={handleCloseModal}
-              className="absolute top-2 right-2 bg-red-400 hover:bg-red-500 z-[999] text-white w-12 h-12 rounded-full hover:text-black dark:hover:text-white text-2xl font-bold"
+              className="absolute top-2 cursor-pointer right-2 bg-red-400 hover:bg-red-500 z-9999 text-white w-12 h-12 grid place-items-center rounded-full hover:text-black dark:hover:text-white text-2xl font-bold"
             >
               &times;
             </button>
