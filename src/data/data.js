@@ -30,6 +30,8 @@ import video13 from "../assets/realstatevideo/video13.mp4";
 import video14 from "../assets/realstatevideo/video14.mp4";
 import video15 from "../assets/realstatevideo/video15.mp4";
 import video16 from "../assets/realstatevideo/video16.mp4";
+import video17 from "../assets/realstatevideo/video17.mp4";
+
 
 // testimonial image
 // testimonial images (Revo Real Estate Agents)
@@ -42,6 +44,14 @@ import tarun from "../assets/Agent/tarun.jpeg";
 
 const data = [
   // Real Estate Videos
+   {
+    title: "Elegant Bedroom Interior Tour",
+    media: video17,
+    mediaType: "real-estate-video",
+    description:
+      "A cinematic walkthrough focused on a thoughtfully designed bedroom interior, highlighting modern furniture placement, ambient lighting, and calming color tones. The video emphasizes comfort, privacy, and refined styling to present a peaceful personal living space within a luxury residence.",
+  },
+
   {
     title: "Elegant Bedroom Interior Tour",
     media: video13,

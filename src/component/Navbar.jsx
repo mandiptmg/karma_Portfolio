@@ -13,27 +13,39 @@ const Navbar = () => {
   const { active, setActive, toogle, setToogle } = useGlobalContext();
   const [scroll, setScroll] = useState("");
 
-  //load dark mode local storage
+  // init dark mode from localStorage
   useEffect(() => {
-    const storedValue = localStorage.getItem("dark-mode");
-    if (storedValue === "true") {
-      setToogle(true);
-      document.documentElement.classList.add("dark");
+    const savedTheme = localStorage.getItem("dark-mode") === "true";
+    setToogle(savedTheme);
+  }, []);
+
+  // sync dark mode with html + localStorage
+  useEffect(() => {
+    const root = document.documentElement;
+
+    if (toogle) {
+      root.classList.add("dark");
+      localStorage.setItem("dark-mode", "true");
     } else {
-      setToogle(false);
+      root.classList.remove("dark");
+      localStorage.setItem("dark-mode", "false");
     }
+  }, [toogle]);
+
+  // scroll effect
+  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setScroll(
-          "bg-gray-100 text-gray-600 dark:text-white dark:bg-slate-800 shadow-xl"
+          "bg-gray-100 text-gray-600 dark:text-white dark:bg-slate-800 shadow-xl",
         );
       } else {
         setScroll("text-white");
       }
     };
+
     handleScroll();
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -84,16 +96,8 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <button
-              onClick={() => {
-                setToogle(!toogle);
-                if (toogle === true) {
-                  document.documentElement.classList.remove("dark");
-                  localStorage.setItem("dark-mode", !toogle);
-                } else {
-                  document.documentElement.classList.add("dark");
-                  localStorage.setItem("dark-mode", !toogle);
-                }
-              }}
+             onClick={() => setToogle((prev) => !prev)}
+
               title={toogle ? "light mode on" : "night mode on"}
               className="mr-5 md:mr-0 animate__slower animate__fadeInRight animate__animated"
             >
@@ -137,7 +141,10 @@ const Navbar = () => {
               {navlink.map((item, index) => {
                 const { title, href } = item;
                 return (
-                  <li key={index} className="hover:text-primary uppercase italic font-extrabold">
+                  <li
+                    key={index}
+                    className="hover:text-primary uppercase italic font-extrabold"
+                  >
                     <a href={href} onClick={() => setActive(false)}>
                       {title}
                     </a>

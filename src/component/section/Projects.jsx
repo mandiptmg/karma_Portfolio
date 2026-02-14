@@ -19,12 +19,12 @@ const Projects = () => {
 
   // Filtered data by selected category
   const filteredData = data.filter((item) =>
-    filter === "all" ? true : item.mediaType === filter
+    filter === "all" ? true : item.mediaType === filter,
   );
 
   // Determine whether to limit results
   const visibleItems =
-    filter === "all" && !showAll ? filteredData.slice(0, 6) : filteredData;
+    filter === "all" && !showAll ? filteredData.slice(0, 8) : filteredData;
 
   return (
     <div className="w-full h-full relative">
@@ -55,16 +55,16 @@ const Projects = () => {
             {type === "all"
               ? "All"
               : type === "image"
-              ? "Photo"
-              : type === "real-estate-video"
-              ? "real estate"
-              : "video"}
+                ? "Photo"
+                : type === "real-estate-video"
+                  ? "real estate"
+                  : "video"}
           </button>
         ))}
       </div>
 
       {/* Grid Display */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
         {visibleItems.map((item, index) => {
           const { title, media, mediaType } = item;
           return (
@@ -82,7 +82,7 @@ const Projects = () => {
                     loop
                     autoPlay
                     playsInline
-                    className="w-full h-64 hover:scale-125 transition-all duration-700   object-cover rounded-t-lg"
+                    className="w-full h-64 hover:scale-125 transition-all duration-700   object-cover object-top rounded-t-lg"
                   />
                 ) : mediaType === "real-estate-video" ? (
                   <video
@@ -91,7 +91,7 @@ const Projects = () => {
                     loop
                     autoPlay
                     playsInline
-                    className="w-full h-64 hover:scale-125 transition-all duration-700   object-cover rounded-t-lg"
+                    className="w-full h-64 hover:scale-125 transition-all duration-700   object-cover object-center rounded-t-lg"
                   />
                 ) : (
                   <img

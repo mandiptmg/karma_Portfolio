@@ -14,7 +14,7 @@ const Hero = () => {
     <div>
       <section
         id="home"
-        className="relative grid place-items-center w-full mx-auto text-gray-600 lg:text-gray-200 min-h-[80vh] pt-28 body-font "
+        className="relative grid place-items-center w-full mx-auto text-gray-900 dark:text-gray-200 min-h-[80vh] pt-28 body-font "
       >
         <div className="flex flex-col-reverse items-center px-5 lg:grid lg:grid-cols-2 md:gap-7 gap-y-20">
           {/* LEFT TEXT CONTENT */}
@@ -22,7 +22,7 @@ const Hero = () => {
             data-aos="fade-up"
             data-aos-easing="ease-in-back"
             data-aos-delay="300"
-            className="text-center space-y-7 md:text-left"
+            className="text-center space-y-7 md:text-left dark:bg-black/20  bg-white/20 p-5 rounded-lg  backdrop-blur-xs"
           >
             <div className="flex items-start gap-x-2">
               <h1 className="grid w-full text-2xl sm:text-3xl md:text-4xl font-bold capitalize lg:text-5xl text-primary place-items-center lg:place-items-start">
@@ -42,7 +42,7 @@ const Hero = () => {
               </h1>
             </div>
 
-            <p className="mb-8 leading-relaxed dark:text-gray-300 text-sm sm:text-base md:text-lg">
+            <p className="mb-8 leading-relaxed    dark:text-gray-300 text-sm sm:text-base md:text-lg">
               Hi, I’m <strong>Karma Lama</strong> — a
               <strong> Visual Content Creator</strong> and
               <strong> Digital Marketing Lead</strong> crafting
