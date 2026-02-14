@@ -14,12 +14,12 @@ import peace from "../assets/video/peace.mp4";
 import trekVideo from "../assets/video/trek.mp4";
 import Couple from "../assets/video/couple_music_video.mp4";
 
-// import video1 from "../assets/realstatevideo/video1.mp4";
-// import video2 from "../assets/realstatevideo/video2.mp4";
-// import video3 from "../assets/realstatevideo/video3.mp4";
-// import video4 from "../assets/realstatevideo/video4.mp4";
+import video1 from "../assets/realstatevideo/video1.mp4";
+import video2 from "../assets/realstatevideo/video2.mp4";
+import video3 from "../assets/realstatevideo/video3.mp4";
+import video4 from "../assets/realstatevideo/video4.mp4";
 import video5 from "../assets/realstatevideo/video5.mp4";
-import video6 from "../assets/realstatevideo/video8.mp4";
+import video6 from "../assets/realstatevideo/video6.mp4";
 import video7 from "../assets/realstatevideo/video7.mp4";
 import video8 from "../assets/realstatevideo/video8.mp4";
 import video9 from "../assets/realstatevideo/video9.mp4";
@@ -92,20 +92,20 @@ const data = [
     description:
       "A refined apartment walkthrough emphasizing architectural symmetry, modern interior styling, and premium surface finishes. The video presents a well-balanced composition of lighting, space, and furniture arrangement to communicate the quality and sophistication of urban residential design.",
   },
-  // {
-  //   title: "Contemporary Home Walkthrough",
-  //   media: video2,
-  //   mediaType: "real-estate-video",
-  //   description:
-  //     "A smooth cinematic walkthrough of a contemporary home featuring clean lines, spacious rooms, and carefully designed lighting. This video highlights the natural flow between living areas while maintaining a warm and welcoming visual atmosphere.",
-  // },
-  // {
-  //   title: "Spacious Living Area Tour",
-  //   media: video1,
-  //   mediaType: "real-estate-video",
-  //   description:
-  //     "A detailed walkthrough focusing on large open living areas designed for comfort, movement, and functionality. The visuals emphasize ceiling height, layout proportions, and furniture placement to demonstrate the home’s ability to support both relaxation and social interaction.",
-  // },
+  {
+    title: "Contemporary Home Walkthrough",
+    media: video2,
+    mediaType: "real-estate-video",
+    description:
+      "A smooth cinematic walkthrough of a contemporary home featuring clean lines, spacious rooms, and carefully designed lighting. This video highlights the natural flow between living areas while maintaining a warm and welcoming visual atmosphere.",
+  },
+  {
+    title: "Spacious Living Area Tour",
+    media: video1,
+    mediaType: "real-estate-video",
+    description:
+      "A detailed walkthrough focusing on large open living areas designed for comfort, movement, and functionality. The visuals emphasize ceiling height, layout proportions, and furniture placement to demonstrate the home’s ability to support both relaxation and social interaction.",
+  },
   {
     title: "Luxury Apartment Interior",
     media: video6,
@@ -113,21 +113,20 @@ const data = [
     description:
       "An elegant cinematic presentation of a luxury apartment interior, highlighting modern décor, premium lighting solutions, and polished surface finishes. The walkthrough conveys a sense of exclusivity and refinement suitable for high-end urban living.",
   },
-      // },
-  // {
-  //   title: "Premium Finish & Lighting Tour",
-  //   media: video3,
-  //   mediaType: "real-estate-video",
-  //   description:
-  //     "A visually focused walkthrough emphasizing premium material finishes, layered lighting design, and detailed interior craftsmanship. This video showcases how texture, reflection, and illumination combine to create a sophisticated and inviting living environment.",
-  // },
-  // {
-  //   title: "Open-Plan Design Walkthrough",
-  //   media: video4,
-  //   mediaType: "real-estate-video",
-  //   description:
-  //     "A cinematic walkthrough demonstrating seamless open-plan living, where kitchen, dining, and lounge areas merge into a single fluid space. The video highlights architectural openness, spatial continuity, and modern design principles for efficient everyday living.",
-  // },
+  {
+    title: "Premium Finish & Lighting Tour",
+    media: video3,
+    mediaType: "real-estate-video",
+    description:
+      "A visually focused walkthrough emphasizing premium material finishes, layered lighting design, and detailed interior craftsmanship. This video showcases how texture, reflection, and illumination combine to create a sophisticated and inviting living environment.",
+  },
+  {
+    title: "Open-Plan Design Walkthrough",
+    media: video4,
+    mediaType: "real-estate-video",
+    description:
+      "A cinematic walkthrough demonstrating seamless open-plan living, where kitchen, dining, and lounge areas merge into a single fluid space. The video highlights architectural openness, spatial continuity, and modern design principles for efficient everyday living.",
+  },
   {
     title: "Kitchen & Dining Experience",
     media: video5,
