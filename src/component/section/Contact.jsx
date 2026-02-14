@@ -38,10 +38,10 @@ const Contact = () => {
               <button
                 onClick={() =>
                   window.open(
-                    "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHXPchjWXShWGSlnhFMcqhNzbVWJgKJqJbzctTbBMGKpNJKTfdKMPWwzNnnnVDLRPXnq"
+                    "https://mail.google.com/mail/?view=cm&fs=1&to=karmamonlamsangpo@gmail.com&su=Hello&body=Hi%20Karma",
                   )
                 }
-                className="font-medium text-sm sm:text-base text-gray-800 dark:text-gray-100 hover:text-primary"
+                className="font-medium text-sm  cursor-pointer sm:text-base text-gray-800 dark:text-gray-100 hover:text-primary  hover:text-red-500"
               >
                 karmamonlamsangpo@gmail.com
               </button>
@@ -54,7 +54,7 @@ const Contact = () => {
             <div>
               <button
                 onClick={() => window.open("https://wa.me/971567835189")}
-                className="font-medium  text-sm sm:text-base text-gray-800 dark:text-gray-100 hover:text-green-500"
+                className="font-medium  cursor-pointer text-sm sm:text-base text-gray-800 dark:text-gray-100 hover:text-green-500"
               >
                 +971 56 783 5189
               </button>
@@ -68,10 +68,10 @@ const Contact = () => {
               <button
                 onClick={() =>
                   window.open(
-                    "https://www.instagram.com/karmamonlamsangpo/profilecard/?igsh=MWs3b2psMHZianFxZw=="
+                    "https://www.instagram.com/karmamonlamsangpo/profilecard/?igsh=MWs3b2psMHZianFxZw==",
                   )
                 }
-                className="font-medium  text-sm sm:text-base text-gray-800 dark:text-gray-100 hover:text-pink-500"
+                className="font-medium   cursor-pointer text-sm sm:text-base text-gray-800 dark:text-gray-100 hover:text-pink-500"
               >
                 @karmamonlamsangpo
               </button>
@@ -85,12 +85,13 @@ const Contact = () => {
             Want to work together or have something in mind?
           </p>
           <button
+            title="Send me an email"
             onClick={() =>
               window.open(
-                "https://mail.google.com/mail/u/0/#inbox?compose=CllgCJTNHXPchjWXShWGSlnhFMcqhNzbVWJgKJqJbzctTbBMGKpNJKTfdKMPWwzNnnnVDLRPXnq"
+                "https://mail.google.com/mail/?view=cm&fs=1&to=karmamonlamsangpo@gmail.com&su=Hello&body=Hi%20Karma",
               )
             }
-            className="px-6 py-2 mt-4  text-sm sm:text-base font-semibold text-white transition rounded bg-primary hover:bg-primary/80"
+            className="px-6 py-2 mt-4 hover:scale-105  text-sm sm:text-base cursor-pointer font-semibold dark:text-white text-gray-600 transition-all rounded bg-primary hover:bg-primary/80"
           >
             Say Hello 👋
           </button>
