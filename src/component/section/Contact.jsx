@@ -14,7 +14,7 @@ const Contact = () => {
             data-aos="fade-up"
             className="mb-4 text-2xl font-bold text-gray-900 uppercase sm:text-4xl title-font dark:text-white"
           >
-            Let&apos;s <span className="text-primary">connect</span>
+            Let&apos;s <span className="text-[#00ADB5]">connect</span>
           </h1>
           <p
             data-aos="fade-up"
@@ -41,7 +41,7 @@ const Contact = () => {
                     "https://mail.google.com/mail/?view=cm&fs=1&to=karmamonlamsangpo@gmail.com&su=Hello&body=Hi%20Karma",
                   )
                 }
-                className="font-medium text-sm  cursor-pointer sm:text-base text-gray-800 dark:text-gray-100 hover:text-primary  hover:text-red-500"
+                className="font-medium text-sm  cursor-pointer sm:text-base text-gray-800 dark:text-gray-100  hover:text-red-500"
               >
                 karmamonlamsangpo@gmail.com
               </button>
@@ -91,7 +91,7 @@ const Contact = () => {
                 "https://mail.google.com/mail/?view=cm&fs=1&to=karmamonlamsangpo@gmail.com&su=Hello&body=Hi%20Karma",
               )
             }
-            className="px-6 py-2 mt-4 hover:scale-105  text-sm sm:text-base cursor-pointer font-semibold dark:text-white text-gray-600 transition-all rounded bg-primary hover:bg-primary/80"
+            className="px-6 py-2 mt-4 hover:scale-105  text-sm sm:text-base cursor-pointer font-semibold text-white transition-all rounded bg-[#00ADB5] hover:bg-[#00ADB5]/80"
           >
             Say Hello 👋
           </button>

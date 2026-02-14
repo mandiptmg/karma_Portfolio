@@ -87,7 +87,7 @@ const Navbar = () => {
               {navlink.map((item) => {
                 const { title, href } = item;
                 return (
-                  <li key={title} className="hover:text-primary">
+                  <li key={title} className="hover:text-[#00ADB5]">
                     <a href={href}>{title}</a>
                   </li>
                 );
@@ -96,8 +96,7 @@ const Navbar = () => {
           </div>
           <div className="flex items-center">
             <button
-             onClick={() => setToogle((prev) => !prev)}
-
+              onClick={() => setToogle((prev) => !prev)}
               title={toogle ? "light mode on" : "night mode on"}
               className="mr-5 md:mr-0 animate__slower animate__fadeInRight animate__animated"
             >
@@ -112,7 +111,7 @@ const Navbar = () => {
               onClick={() => setActive(!active)}
               className="text-xl md:hidden animate__slower animate__fadeInRight animate__animated"
             >
-              <FaBars className="transition-all duration-300 text-primary hover:rotate-90 hover:text-primary " />
+              <FaBars className="transition-all duration-300 text-[#00ADB5] hover:rotate-90 hover:text-[#00ADB5] " />
             </button>
           </div>
         </div>
@@ -130,7 +129,7 @@ const Navbar = () => {
         <div className="grid place-items-center">
           <div>
             <button
-              className="absolute top-7 right-5 bg-primary rounded-full p-2  transition-all duration-300 hover:scale-105  "
+              className="absolute top-7 right-5 bg-[#00ADB5] rounded-full p-2  transition-all duration-300 hover:scale-105  "
               onClick={() => setActive(false)}
             >
               <FaTimes className="text-2xl text-white " />
@@ -143,7 +142,7 @@ const Navbar = () => {
                 return (
                   <li
                     key={index}
-                    className="hover:text-primary uppercase italic font-extrabold"
+                    className="hover:text-[#00ADB5] uppercase italic font-extrabold"
                   >
                     <a href={href} onClick={() => setActive(false)}>
                       {title}

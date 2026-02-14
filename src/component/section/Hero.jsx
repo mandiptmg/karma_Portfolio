@@ -25,7 +25,7 @@ const Hero = () => {
             className="text-center space-y-7 md:text-left dark:bg-black/20  bg-white/20 p-5 rounded-lg  backdrop-blur-xs"
           >
             <div className="flex items-start gap-x-2">
-              <h1 className="grid w-full text-2xl sm:text-3xl md:text-4xl font-bold capitalize lg:text-5xl text-primary place-items-center lg:place-items-start">
+              <h1 className="grid w-full text-2xl sm:text-3xl md:text-4xl font-bold capitalize lg:text-5xl text-[#00ADB5] place-items-center lg:place-items-start">
                 <TypeAnimation
                   sequence={[
                     "Content Editor 📸",
@@ -46,17 +46,17 @@ const Hero = () => {
               Hi, I’m <strong>Karma Lama</strong> — a
               <strong> Visual Content Creator</strong> and
               <strong> Digital Marketing Lead</strong> crafting
-              <span className="font-semibold text-primary">
+              <span className="font-semibold text-[#00ADB5]">
                 {" "}
                 cinematic visuals
               </span>
               ,
-              <span className="font-semibold text-primary">
+              <span className="font-semibold text-[#00ADB5]">
                 {" "}
                 high-impact videos
               </span>
               , and
-              <span className="font-semibold text-primary">
+              <span className="font-semibold text-[#00ADB5]">
                 {" "}
                 performance-driven campaigns
               </span>
@@ -75,7 +75,7 @@ const Hero = () => {
               <button
                 onClick={() => {
                   window.open(
-                    "https://www.instagram.com/karmamonlamsangpo/profilecard/?igsh=MWs3b2psMHZianFxZw=="
+                    "https://www.instagram.com/karmamonlamsangpo/profilecard/?igsh=MWs3b2psMHZianFxZw==",
                   );
                 }}
                 className="inline-flex items-center gap-2  p-2 bg-pink-600 rounded-md lg:justify-start hover:bg-pink-700 text-sm md:text-lg font-medium text-white transition hover:text-white"
@@ -100,7 +100,7 @@ const Hero = () => {
             <div
               data-aos="fade-down"
               data-aos-delay="600"
-              className="animate-blob relative bg-cover bg-center bg-no-repeat border-4 border-transparent rounded-full lg:w-[25rem] lg:h-[25rem] md:w-[20rem] md:h-[20rem] w-[15rem] h-[15rem] transition-all duration-1000 shadow-lg shadow-primary/10"
+              className="animate-blob relative bg-cover bg-center bg-no-repeat border-4 border-transparent rounded-full lg:w-100  md:w-[20rem] md:h-80 w-60 h-60 transition-all duration-1000 shadow-lg shadow-[#00ADB5]/10"
               style={dynamicStyle}
             ></div>
           </div>

@@ -70,7 +70,7 @@ const Footer = () => {
             });
           }}
         >
-          <FaChevronCircleUp className="absolute transition-all duration-700 bottom-10 right-14 primary text-primary hover:scale-105 animate-bounce " />
+          <FaChevronCircleUp className="absolute transition-all duration-700 bottom-10 right-14 [#00ADB5] text-[#00ADB5] hover:scale-105 animate-bounce " />
         </button>
       </footer>
     </div>

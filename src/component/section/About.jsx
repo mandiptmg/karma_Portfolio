@@ -16,7 +16,7 @@ const About = () => {
 
         {/* TEXT */}
         <div data-aos="fade-up">
-          <h2 className="mb-2 text-xs sm:text-sm font-bold tracking-widest uppercase text-primary">
+          <h2 className="mb-2 text-xs sm:text-sm font-bold tracking-widest uppercase text-[#00ADB5]">
             About Me
           </h2>
 
@@ -62,7 +62,7 @@ const About = () => {
             <a
               href={Resume}
               download="Karma-Lama-Resume.pdf"
-              className="inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-base font-semibold text-white transition rounded-lg bg-primary hover:bg-primary/80"
+              className="inline-flex items-center gap-2 px-4 py-2 text-xs sm:text-base font-semibold text-white transition rounded-lg bg-[#00ADB5] hover:bg-[#00ADB5]/80"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
