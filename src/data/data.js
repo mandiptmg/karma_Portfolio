@@ -44,50 +44,50 @@ import tarun from "../assets/Agent/tarun.jpeg";
 
 const data = [
   // Real Estate Videos
-   {
-    title: "Elegant Bedroom Interior Tour",
-    media: video17,
-    mediaType: "real-estate-video",
-    description:
-      "A cinematic walkthrough focused on a thoughtfully designed bedroom interior, highlighting modern furniture placement, ambient lighting, and calming color tones. The video emphasizes comfort, privacy, and refined styling to present a peaceful personal living space within a luxury residence.",
-  },
+ {
+  title: "Why Global Wealth Is Flowing Into Dubai Real Estate",
+  media: video17,
+  mediaType: "real-estate-video",
+  description:
+    "An in-depth visual analysis explaining why Dubai has emerged as a global safe haven for high-net-worth individuals amid rising geopolitical tensions and civil unrest worldwide. The video connects major international conflicts and instability to increased demand for secure, luxury real estate in Dubai, showing how safety, political stability, and world-class infrastructure are driving long-term property value growth rather than speculative hype.",
+},
 
+// Real Estate Videos
+{
+  title: "Is Dubai Really the Safest City? A Critical Discussion",
+  media: video13,
+  mediaType: "real-estate-video",
+  description:
+    "A thought-provoking commentary video examining claims about Dubai’s reputation as one of the world’s safest cities. The speaker contrasts Dubai’s global image of security and stability with controversial online allegations and conspiracy narratives, questioning how public trust, government accountability, and elite influence shape perceptions of safety. The video invites viewers to form their own opinion on whether Dubai’s safety image reflects reality or carefully managed reputation.",
+},
+  
+{
+  title: "Team Phoenix Closes Another Successful Real Estate Deal",
+  media: video14,
+  mediaType: "real-estate-video",
+  description:
+    "A celebratory moment showcasing Team Phoenix after successfully closing a major real estate project deal. The video highlights teamwork, negotiation success, and client trust, reflecting the group’s commitment to delivering results in competitive property markets and reinforcing their growing reputation in the real estate industry.",
+},
+{
+  title: "Forest-Inspired Apartment Community – Starting from AED 2.5M",
+  media: video15,
+  mediaType: "real-estate-video",
+  description:
+    "A promotional showcase of a nature-themed residential community offering modern apartments starting from 2.5 million dirhams. The video highlights the forest-inspired master plan, scenic green views, and smartly designed layouts that combine comfort with long-term investment value. Positioned in a strategic location and developed by a trusted brand, the project appeals to both end users seeking a premium lifestyle and investors targeting strong ROI. Viewers are encouraged to explore the project details and book their unit through the provided link.",
+},{
+  title: "Retu Movin Apartments vs Nearby Tower – Price & Demand Explained",
+  media: video16,
+  mediaType: "real-estate-video",
+  description:
+    "A comparative real estate segment highlighting the differences between Retu Movin Apartments and a neighboring residential tower under construction. The video explains payment structure distinctions, including full-payment terms for Retu Movin, and examines how location and project type influence buyer decisions. It also features the nearby Shahrukh Khan Tower by :contentReference[oaicite:0]{index=0}, which is already completely sold out despite still being under construction—demonstrating strong pre-launch demand driven by branding, offline sales strategy, and investor confidence.",
+},
   {
-    title: "Elegant Bedroom Interior Tour",
-    media: video13,
-    mediaType: "real-estate-video",
-    description:
-      "A cinematic walkthrough focused on a thoughtfully designed bedroom interior, highlighting modern furniture placement, ambient lighting, and calming color tones. The video emphasizes comfort, privacy, and refined styling to present a peaceful personal living space within a luxury residence.",
-  },
-  {
-    title: "Modern Bathroom & Vanity Showcase",
-    media: video14,
-    mediaType: "real-estate-video",
-    description:
-      "A detailed interior walkthrough of a contemporary bathroom and vanity area featuring premium tiles, clean architectural lines, and carefully balanced lighting. This presentation highlights functionality, hygiene-focused design, and the visual elegance of modern residential bathrooms.",
-  },
-  {
-    title: "Hallway & Transition Space Walkthrough",
-    media: video15,
-    mediaType: "real-estate-video",
-    description:
-      "A smooth cinematic walkthrough capturing the transitional spaces of a luxury home, including hallways and connecting corridors. The video emphasizes spatial flow, wall textures, lighting accents, and architectural continuity that link private and shared living areas seamlessly.",
-  },
-  {
-    title: "Complete Interior Flow Experience",
-    media: video16,
-    mediaType: "real-estate-video",
-    description:
-      "A comprehensive cinematic walkthrough presenting the full interior journey of a modern residential property. From entry points to private rooms, this video showcases spatial harmony, material consistency, and lighting design to deliver a complete visual experience of contemporary home living.",
-  },
-
-  {
-    title: "Modern Interior Walkthrough",
-    media: video11,
-    mediaType: "real-estate-video",
-    description:
-      "A cinematic interior walkthrough highlighting sleek modern architecture, refined materials, and balanced lighting design. This video focuses on spatial flow, minimalist aesthetics, and the harmony between textures and colors to present a premium residential experience tailored for contemporary lifestyles.",
-  },
+  title: "EMR Polo-Themed Community – High-Growth Investment Opportunity",
+  media: video11,
+  mediaType: "real-estate-video",
+  description:
+    "An investor-oriented showcase of a new residential development by :contentReference[oaicite:0]{index=0}, highlighting the launch of Asia’s largest polo-themed community. The video presents luxury villas and townhouses within a limited-inventory master plan designed for exclusivity and long-term capital appreciation. It emphasizes EMR’s strong historical performance, flexible four-year interest-free payment structure, and a starting price from 3 million AUD with no full upfront payment required—making it attractive for both lifestyle buyers and serious investors seeking high ROI potential.",
+},
   {
     title: "Luxury Living Space Tour",
     media: video10,
