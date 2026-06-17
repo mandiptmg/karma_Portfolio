@@ -68,7 +68,7 @@ const data = [
   {
   title: "Bugatti Residences at Business Bay",
   media: video20,
-  mediaType: "real-state-video",
+  mediaType: "real-estate-video",
   description:
     "An ultra-luxury residential landmark in Business Bay, inspired by Bugatti’s iconic design language and offering exclusive waterfront living, world-class amenities, and stunning views of Dubai’s skyline.",
 },
@@ -76,7 +76,7 @@ const data = [
   {
   title: "Master Community",
   media: video19,
-  mediaType: "real-state-video",
+  mediaType: "real-estate-video",
   description:
     "A thoughtfully planned master community featuring residential neighborhoods, landscaped parks, retail destinations, and lifestyle amenities designed to create a connected and vibrant living environment.",
 },
@@ -84,7 +84,7 @@ const data = [
   {
   title: "Dinesh – Leading Real Estate Professional",
   media: video18,
-  mediaType: "real-state-video",
+  mediaType: "real-estate-video",
   description:
     "Dinesh is an ambitious real estate professional dedicated to delivering exceptional client experiences and building a strong reputation in Nepal’s growing property market."
 },
