@@ -9,14 +9,14 @@ import nightMode from "../assets/project/nightMode.jpg";
 import trekking from "../assets/project/treking.jpg";
 
 
-import photo1 from "../assets/realstatephoto/photo1.jpg";
-import photo2 from "../assets/realstatephoto/photo2.jpg";
-import photo3 from "../assets/realstatephoto/photo3.jpg";
-import photo4 from "../assets/realstatephoto/photo4.jpg";
-import photo5 from "../assets/realstatephoto/photo5.jpg";
-import photo6 from "../assets/realstatephoto/photo6.jpg";
-import photo7 from "../assets/realstatephoto/photo7.jpg";
-import photo8 from "../assets/realstatephoto/photo8.jpg";
+import photo1 from "../assets/realstatephoto/photo1.jpeg";
+import photo2 from "../assets/realstatephoto/photo2.jpeg";
+import photo3 from "../assets/realstatephoto/photo3.jpeg";
+import photo4 from "../assets/realstatephoto/photo4.jpeg";
+import photo5 from "../assets/realstatephoto/photo5.jpeg";
+import photo6 from "../assets/realstatephoto/photo6.jpeg";
+import photo7 from "../assets/realstatephoto/photo7.jpeg";
+import photo8 from "../assets/realstatephoto/photo8.jpeg";
 
 // video
 import coffee from "../assets/video/coffee.mp4";
