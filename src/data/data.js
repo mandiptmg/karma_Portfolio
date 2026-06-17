@@ -8,6 +8,16 @@ import nightDog from "../assets/project/night view with dog.jpg";
 import nightMode from "../assets/project/nightMode.jpg";
 import trekking from "../assets/project/treking.jpg";
 
+
+import photo1 from "../assets/realstatephoto/photo1.jpg";
+import photo2 from "../assets/realstatephoto/photo2.jpg";
+import photo3 from "../assets/realstatephoto/photo3.jpg";
+import photo4 from "../assets/realstatephoto/photo4.jpg";
+import photo5 from "../assets/realstatephoto/photo5.jpg";
+import photo6 from "../assets/realstatephoto/photo6.jpg";
+import photo7 from "../assets/realstatephoto/photo7.jpg";
+import photo8 from "../assets/realstatephoto/photo8.jpg";
+
 // video
 import coffee from "../assets/video/coffee.mp4";
 import peace from "../assets/video/peace.mp4";
@@ -31,6 +41,10 @@ import video14 from "../assets/realstatevideo/video14.mp4";
 import video15 from "../assets/realstatevideo/video15.mp4";
 import video16 from "../assets/realstatevideo/video16.mp4";
 import video17 from "../assets/realstatevideo/video17.mp4";
+import video18 from "../assets/realstatevideo/video18.mp4";
+import video19 from "../assets/realstatevideo/video19.mp4";
+import video20 from "../assets/realstatevideo/video20.mp4";
+import video21 from "../assets/realstatevideo/video21.mp4";
 
 
 // testimonial image
@@ -44,6 +58,37 @@ import tarun from "../assets/Agent/tarun.jpeg";
 
 const data = [
   // Real Estate Videos
+   {
+  title: "Futuristic library in Dubai",
+  media: video21,
+  mediaType: "real-estate-video",
+  description:
+    "A futuristic architectural landmark in Dubai, the Mohammed bin Rashid Library features a striking open-book design and houses over 1.1 million printed and digital resources."},
+
+  {
+  title: "Bugatti Residences at Business Bay",
+  media: video20,
+  mediaType: "real-state-video",
+  description:
+    "An ultra-luxury residential landmark in Business Bay, inspired by Bugatti’s iconic design language and offering exclusive waterfront living, world-class amenities, and stunning views of Dubai’s skyline.",
+},
+
+  {
+  title: "Master Community",
+  media: video19,
+  mediaType: "real-state-video",
+  description:
+    "A thoughtfully planned master community featuring residential neighborhoods, landscaped parks, retail destinations, and lifestyle amenities designed to create a connected and vibrant living environment.",
+},
+
+  {
+  title: "Dinesh – Leading Real Estate Professional",
+  media: video18,
+  mediaType: "real-state-video",
+  description:
+    "Dinesh is an ambitious real estate professional dedicated to delivering exceptional client experiences and building a strong reputation in Nepal’s growing property market."
+},
+  
  {
   title: "Why Global Wealth Is Flowing Into Dubai Real Estate",
   media: video17,
@@ -259,6 +304,64 @@ const data = [
     mediaType: "video",
     description:
       "A romantic cinematic music video portraying emotional connection through movement, framing, and visual rhythm. The story focuses on subtle expressions, shared moments, and atmospheric lighting to represent love through motion.",
+  },
+
+  //real state photo
+    {
+    title: "Twilight Serenity",
+    media: photo1,
+    mediaType: "real-state-photo",
+    description:
+      "A wide-angle view of the villa’s rear facade at dusk, showcasing sleek white architecture, an elegant pool deck, and outdoor lounge areas overlooking a pristine golf course landscape.",
+  },
+  {
+    title: "The Sky Lounge",
+    media: photo2,
+    mediaType: "real-state-photo",
+    description:
+      "A spacious rooftop terrace featuring a sculptural outdoor sectional in mustard and grey tones, complemented by dark wood-look decking and glass railings with panoramic views of the surrounding greenery.",
+  },
+  {
+    title: "A Grand Arrival",
+    media: photo3,
+    mediaType: "real-state-photo",
+    description:
+      "The villa’s entrance creates a striking first impression with massive timber double doors, grey marble wall accents, a minimalist water feature, stepping stones, and manicured bonsai-style trees.",
+  },
+  {
+    title: "Vertical Sophistication",
+    media: photo4,
+    mediaType: "real-state-photo",
+    description:
+      "A stunning interior gallery highlighting luxury finishes, featuring a gold-trimmed home elevator, floating marble staircase, integrated LED lighting, and sleek glass balustrades.",
+  },
+  {
+    title: "The Designer Dressing Room",
+    media: photo5,
+    mediaType: "real-state-photo",
+    description:
+      "A refined walk-in closet with floor-to-ceiling dark wood cabinetry, integrated lighting, a full-length mirrored wall, and elegant herringbone-patterned flooring.",
+  },
+  {
+    title: "Multi-Level Living",
+    media: photo6,
+    mediaType: "real-state-photo",
+    description:
+      "An architectural perspective showcasing the villa’s multiple levels, expansive balconies, and private terraces, all designed to maximize views of the pool and golf course.",
+  },
+  {
+    title: "Architectural Perspectives",
+    media: photo7,
+    mediaType: "real-state-photo",
+    description:
+      "A minimalist rooftop transition space framed by a dark architectural pergola, creating a striking contrast against the villa’s bright exterior and upper living spaces.",
+  },
+  {
+    title: "The Inner Sanctuary",
+    media: photo8,
+    mediaType: "real-state-photo",
+    description:
+      "A top-down view of a private sunken courtyard featuring classic wood-and-white seating surrounded by lush hedges, offering a peaceful retreat within the villa.",
   },
 ];
 
