@@ -39,7 +39,7 @@ const Projects = () => {
 
       {/* Category Filter Buttons */}
       <div className="flex justify-center gap-4 mb-12">
-        {["all", "image", "real-estate-video", "video"].map((type) => (
+        {["all", "image", "real-estate-video","real-state-photo", "video"].map((type) => (
           <button
             key={type}
             onClick={() => {
@@ -56,8 +56,10 @@ const Projects = () => {
               ? "All"
               : type === "image"
                 ? "Photo"
+                : type === "real-state-photo"
+                ? "real estate photo"
                 : type === "real-estate-video"
-                  ? "real estate"
+                  ? "real estate video"
                   : "video"}
           </button>
         ))}
